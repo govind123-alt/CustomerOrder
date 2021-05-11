@@ -1,0 +1,184 @@
+{
+	"info": {
+		"_postman_id": "15eb3e2e-d56f-48c9-8022-f2b812eda2d9",
+		"name": "Customer",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"email\": \"govind@gmail.com\",\r\n    \"password\": \"hello\",\r\n  \"firstname\": \"govind\",\r\n  \"lastname\": \"sharma\",\r\n  \"mobile_number\": \"8896357307\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5532/user/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5532",
+					"path": [
+						"user",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\" : \"govind@gmail.com\",\r\n    \"password\" : \"govind\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5532/user/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5532",
+					"path": [
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "order",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n{\r\n    \"orderItems\" : \"{A,B,C}\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5532/user/order",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5532",
+					"path": [
+						"user",
+						"order"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"1\",\r\n    \"orderItems\": \"B\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5532/user/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5532",
+					"path": [
+						"user",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "adminRegister",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\" : \"admin@gmail.com\",\r\n    \"password\" : \"admin\",\r\n    \"name\" : \"Govind Sharma\",\r\n    \"phone\" : \"8521479632\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5532/user/adminRegister",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5532",
+					"path": [
+						"user",
+						"adminRegister"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "adminOrder",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"admin@gmail.com\",\r\n    \"password\": \"admin\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5532/user/adminOrder",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5532",
+					"path": [
+						"user",
+						"adminOrder"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

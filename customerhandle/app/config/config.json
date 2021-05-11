@@ -1,0 +1,10 @@
+{
+    "development":{
+        "database": "acepnp",
+        "db_username": "root",
+        "db_password": "root",
+        "host": "localhost",
+        "db_dialect": "mysql",
+        "server_port": 5532
+    }
+}
